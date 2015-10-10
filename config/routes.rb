@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   
   # support Stripe payments through charges
   resources :charges
+  resources :purchases, only: [:show]
+  
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
