@@ -50,10 +50,16 @@ ActiveRecord::Schema.define(version: 20151014045357) do
     t.string   "title"
     t.string   "subtitle"
     t.string   "author"
+    t.string   "author_image_name"
+    t.decimal  "price"
+    t.string   "sku"
+    t.string   "length"
+    t.string   "download_url"
+    t.string   "details"
     t.text     "description"
-    t.decimal  "sku"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "author_description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "purchases", force: :cascade do |t|
