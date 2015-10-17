@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  root  'pages#home'
+  root  'products#index'
   
   # support Stripe payments through charges
   resources :charges
