@@ -8,4 +8,7 @@ class Product < ActiveRecord::Base
   def thumbnail_image_name
     "product-#{title.split.slice(0..-2).join("  ").gsub(" "," -").downcase}.png"
   end
+  def header_image_name
+    "header-#{title.split.slice(0..-2).join("  ").gsub(" "," -").downcase}.png"
+  end
 end
