@@ -53,6 +53,11 @@ gem 'devise'
 # Use bootstrap for design
 gem 'bootstrap-sass'
 
+# Use Less and Bootstrap Less
+gem "therubyracer"
+gem "less-rails"
+gem "less-rails-bootstrap"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

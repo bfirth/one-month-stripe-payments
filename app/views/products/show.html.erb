@@ -1,5 +1,5 @@
 <% content_for :head do %>
-	<%= image_tag(@product.header_image_name, id: 'content-header', alt: "Learn #{@product.title}")%>
+	<%= image_tag(asset_path('unsplash.jpeg'), class: 'cover-image', alt: "Learn #{@product.title}")%>
 <% end %>
 
 <section id="content-details" class="row clearfix">
